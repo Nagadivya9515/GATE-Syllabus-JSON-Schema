@@ -42,7 +42,38 @@ const syllabus = await response.json();
 console.log(syllabus.subjects);
 ```
 
-Replace `OWNER` in the `$schema` and schema `$id` URLs with your GitHub username after creating the repository. Replace `OWNER/REPOSITORY` in the fetch example with your actual GitHub owner and repository name.
+
+### Python
+
+You can fetch and use the GATE CS 2027 syllabus directly in Python using the built-in `urllib` and `json` modules.
+
+```python
+import json
+from urllib.request import urlopen
+
+DATA_URL = (
+    "https://raw.githubusercontent.com/"
+    "Nagadivya9515/GATE-Syllabus-JSON-Schema/"
+    "main/data/gate-cs-2027.json"
+)
+
+with urlopen(DATA_URL) as response:
+    syllabus = json.load(response)
+
+# Display dataset information
+print(syllabus["dataset"]["name"])
+
+# Display all subjects and their syllabus statements
+for subject in syllabus["subjects"]:
+    print(f"\n{subject['section_number']}. {subject['name']}")
+
+    for statement in subject["syllabus_statements"]:
+        print(f"  - {statement}")
+```
+
+**No external dependencies required.**
+
+
 
 ## Validate locally
 
@@ -79,4 +110,4 @@ This repository is an independent community data project. It is not affiliated w
 
 ## License
 
-The package currently declares `UNLICENSED` because redistribution rights for the source-derived syllabus data have not yet been established. Before public release, choose and document an appropriate license for original code/schema and clarify the terms applicable to the dataset.
+
