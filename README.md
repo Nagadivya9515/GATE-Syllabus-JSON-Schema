@@ -108,6 +108,28 @@ Source document supplied for this extraction: **GATE 2027 — Computer Science a
 
 This repository is an independent community data project. It is not affiliated with, endorsed by, or maintained by IIT Madras or the GATE authorities. Verify the source document and applicable terms before redistributing official source material.
 
-## License
+## Licensing
 
+### Original code and project files
+
+The original source code, JSON Schema, validation scripts,
+and project configuration files are licensed under the MIT License.
+
+### GATE syllabus dataset
+
+The syllabus dataset in `data/` is derived from the
+official GATE 2027 syllabus published by IIT Madras.
+
+The MIT License does not apply to the official syllabus
+content reproduced in the dataset.
+
+The dataset is currently provided without a separate
+reuse license. Please refer to the official GATE 2027
+website for the authoritative syllabus.
+
+Official source:
+https://gate2027.iitm.ac.in/exam_papers_and_syllabus
+
+This project is independent and is not affiliated with
+or endorsed by IIT Madras or the GATE organizing institute.
 
