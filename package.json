@@ -1,0 +1,13 @@
+{
+  "name": "gate-cs-syllabus",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Versioned, machine-readable GATE Computer Science syllabus dataset.",
+  "scripts": {
+    "validate": "node scripts/validate.js"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1"
+  }
+}

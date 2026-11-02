@@ -1,0 +1,105 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Nagadivya9515/GATE-Syllabus-JSON-Schema/main/schema/syllabus.schema.json",
+  "dataset": {
+    "id": "gate-cs",
+    "name": "GATE Computer Science and Information Technology Syllabus",
+    "exam": "GATE",
+    "paper_code": "CS",
+    "year": 2027,
+    "organizing_institute": "IIT Madras",
+    "source": {
+      "document": "GATE 2027 Official Syllabus - Computer Science and Information Technology",
+      "pages": [
+        1,
+        2
+      ],
+      "extraction_policy": "Syllabus statements are transcribed from the source document. Line wrapping is normalized; wording and listed concepts are retained."
+    }
+  },
+  "subjects": [
+    {
+      "id": "engineering-mathematics",
+      "section_number": 1,
+      "name": "Engineering Mathematics",
+      "syllabus_statements": [
+        "Discrete Mathematics: Propositional and first order logic. Sets, relations, functions, partial orders and lattices. Monoids, Groups. Graphs: connectivity, matching, colouring. Combinatorics: counting, recurrence relations, generating functions.",
+        "Linear Algebra: Matrices, determinants, system of linear equations, eigenvalues and eigenvectors, LU decomposition.",
+        "Calculus: Limits, continuity and differentiability, Maxima and minima, Mean value theorem, Integration.",
+        "Probability and Statistics: Random variables, Uniform, normal, exponential, Poisson and binomial distributions. Mean, median, mode and standard deviation. Conditional probability and Bayes theorem."
+      ]
+    },
+    {
+      "id": "digital-logic",
+      "section_number": 2,
+      "name": "Digital Logic",
+      "syllabus_statements": [
+        "Boolean algebra and minimization – algebraic technique, Karnaugh map, tabular method. Design of combinational and sequential circuits. Number representation and arithmetic (fixed and floating point)."
+      ]
+    },
+    {
+      "id": "computer-organization-and-architecture",
+      "section_number": 3,
+      "name": "Computer Organization and Architecture",
+      "syllabus_statements": [
+        "Instruction set and addressing modes. Design of arithmetic and logic unit (ALU). Design of control unit – hardwired and microprogrammed. Memory interfacing and hierarchy: performance, cache memory mapping. I/O interface (interrupt and DMA). Instruction pipelining, pipeline hazards."
+      ]
+    },
+    {
+      "id": "programming-and-data-structures",
+      "section_number": 4,
+      "name": "Programming and Data Structures",
+      "syllabus_statements": [
+        "Programming in C. Recursion. Arrays, stacks, queues, linked lists, trees, binary search trees, binary heaps, graphs."
+      ]
+    },
+    {
+      "id": "algorithms",
+      "section_number": 5,
+      "name": "Algorithms",
+      "syllabus_statements": [
+        "Searching, sorting, hashing. Asymptotic worst case time and space complexity. Algorithm design techniques: greedy, dynamic programming and divide-and-conquer. Graph traversals, minimum spanning trees, shortest paths."
+      ]
+    },
+    {
+      "id": "theory-of-computation",
+      "section_number": 6,
+      "name": "Theory of Computation",
+      "syllabus_statements": [
+        "Regular expressions and finite automata. Context-free grammars and push-down automata. Regular and context-free languages, pumping lemma. Turing machines and undecidability."
+      ]
+    },
+    {
+      "id": "compiler-design",
+      "section_number": 7,
+      "name": "Compiler Design",
+      "syllabus_statements": [
+        "Lexical analysis, parsing, syntax-directed translation. Runtime environments. Intermediate code generation. Local optimisation, Data flow analyses: constant propagation, liveness analysis, common sub expression elimination."
+      ]
+    },
+    {
+      "id": "operating-systems",
+      "section_number": 8,
+      "name": "Operating System",
+      "syllabus_statements": [
+        "System calls, processes, threads, inter-process communication, concurrency and synchronization. Deadlock. CPU and I/O scheduling. Memory management and virtual memory. File systems."
+      ]
+    },
+    {
+      "id": "databases",
+      "section_number": 9,
+      "name": "Databases",
+      "syllabus_statements": [
+        "ER-model. Relational model: relational algebra, tuple calculus, SQL. Integrity constraints, normal forms. File organization, indexing (e.g., B and B+ trees). Transactions and concurrency control."
+      ]
+    },
+    {
+      "id": "computer-networks",
+      "section_number": 10,
+      "name": "Computer Networks",
+      "syllabus_statements": [
+        "Principles of Layering; Basics of switching (circuit, packet and virtual circuit) and performance metrics;",
+        "Data link layer: error detection, Medium Access Control, Ethernet; Distance vector and link state routing; IPv4 - Fragmentation, CIDR Notation, Network Address Translation; TCP- flow control and congestion control, socket API; DNS and HTTP."
+      ]
+    }
+  ]
+}

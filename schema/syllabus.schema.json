@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/Nagadivya9515/GATE-Syllabus-JSON-Schema/main/schema/syllabus.schema.json",
+  "title": "GATE CS Syllabus Dataset",
+  "description": "Schema for versioned GATE Computer Science syllabus data.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "dataset",
+    "subjects"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "format": "uri"
+    },
+    "dataset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "exam",
+        "paper_code",
+        "year",
+        "organizing_institute",
+        "source"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "exam": {
+          "const": "GATE"
+        },
+        "paper_code": {
+          "const": "CS"
+        },
+        "year": {
+          "type": "integer",
+          "minimum": 2000,
+          "maximum": 2100
+        },
+        "organizing_institute": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "document",
+            "pages",
+            "extraction_policy"
+          ],
+          "properties": {
+            "document": {
+              "type": "string",
+              "minLength": 1
+            },
+            "pages": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "type": "integer",
+                "minimum": 1
+              }
+            },
+            "extraction_policy": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "subjects": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "section_number",
+          "name",
+          "syllabus_statements"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "section_number": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 99
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "syllabus_statements": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    }
+  }
+}

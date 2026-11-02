@@ -1,0 +1,8 @@
+{
+  "project": "gate-cs-syllabus",
+  "dataset_version": "1.0.0",
+  "dataset_file": "data/gate-cs-2027.json",
+  "schema_file": "schema/syllabus.schema.json",
+  "validator": "scripts/validate.js",
+  "validation": "JSON Schema Draft 2020-12 via Ajv, plus uniqueness and section continuity checks"
+}
